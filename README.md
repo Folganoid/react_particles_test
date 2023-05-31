@@ -1,0 +1,1 @@
+https://github.com/matteobruni/tsparticles/tree/main/utils/configs/src

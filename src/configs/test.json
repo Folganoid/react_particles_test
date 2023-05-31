@@ -1,25 +1,25 @@
 {
-  "name": "NASA",
+  "name": "Responsive",
   "particles": {
       "number": {
-          "value": 160,
+          "value": 80,
           "density": {
-              "enable": true
+              "enable": false
           }
       },
       "color": {
-          "value": "#ffffff"
+          "value": "#ff0000"
       },
       "shape": {
           "type": "circle"
       },
       "opacity": {
-          "value": 1,
-          "random": true,
+          "value": 0.5,
+          "random": false,
           "animation": {
-              "enable": true,
-              "speed": 1,
-              "opacity_min": 0,
+              "enable": false,
+              "speed": 3,
+              "opacity_min": 0.1,
               "sync": false
           }
       },
@@ -28,29 +28,28 @@
           "random": true,
           "animation": {
               "enable": false,
-              "speed": 4,
-              "size_min": 0.3,
+              "speed": 20,
+              "size_min": 0.1,
               "sync": false
           }
       },
       "links": {
-          "enable": false,
-          "distance": 150,
+          "enable": true,
+          "distance": 100,
           "color": "#ffffff",
           "opacity": 0.4,
           "width": 1
       },
       "move": {
           "enable": true,
-          "speed": 1,
+          "speed": 3,
           "direction": "none",
-          "random": true,
+          "random": false,
           "straight": false,
-          "bounce": false,
           "attract": {
               "enable": false,
               "rotateX": 600,
-              "rotateY": 600
+              "rotateY": 1200
           }
       }
   },
@@ -58,11 +57,11 @@
       "events": {
           "onHover": {
               "enable": true,
-              "mode": "bubble"
+              "mode": "repulse"
           },
           "onClick": {
               "enable": true,
-              "mode": "repulse"
+              "mode": "push"
           }
       },
       "modes": {
@@ -73,14 +72,13 @@
               }
           },
           "bubble": {
-              "distance": 250,
-              "size": 0,
+              "distance": 400,
+              "size": 40,
               "duration": 2,
-              "opacity": 0
+              "opacity": 0.8
           },
           "repulse": {
-              "distance": 400,
-              "duration": 0.4
+              "distance": 200
           },
           "push": {
               "quantity": 4
@@ -90,11 +88,35 @@
           }
       }
   },
+  "responsive": [
+      {
+          "maxWidth": 600,
+          "options": {
+              "particles": {
+                  "color": {
+                      "value": "#0000ff"
+                  },
+                  "number": {
+                      "value": 40
+                  }
+              }
+          }
+      },
+      {
+          "maxWidth": 1000,
+          "options": {
+              "particles": {
+                  "color": {
+                      "value": "#00ff00"
+                  },
+                  "number": {
+                      "value": 60
+                  }
+              }
+          }
+      }
+  ],
   "background": {
-      "color": "#232741",
-      "image": "url('http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png')",
-      "position": "50% 50%",
-      "repeat": "no-repeat",
-      "size": "20%"
+      "color": "#000000"
   }
 }
